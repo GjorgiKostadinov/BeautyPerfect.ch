@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Perfect — Soins de Luxe | Luxury Wellness</title>
+    <meta name="description" content="Beauty Perfect — Madérothérapie, Ventouses & Soins du Visage. Luxury wellness treatments in a Swiss-inspired setting.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner" id="promoBanner">
+        <div class="promo-inner">
+            <p>
+                <span data-fr>✨ OFFRE DE BIENVENUE : -20% sur votre 1er soin — Contactez-nous sur WhatsApp</span>
+                <span data-en hidden>✨ WELCOME OFFER: 20% OFF your 1st treatment — Contact us on WhatsApp</span>
+            </p>
+            <a href="https://wa.me/33123456789" target="_blank" rel="noopener" class="promo-link">
+                <i class="fab fa-whatsapp"></i>
+                <span data-fr>Réserver</span><span data-en hidden>Book Now</span>
+            </a>
+            <button class="promo-close" id="promoClose" aria-label="Close">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-mark">B<span>P</span></div>
+                <div class="logo-text">Beauty Perfect</div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#services"><span data-fr>Soins</span><span data-en hidden>Services</span></a></li>
+                <li><a href="#gallery"><span data-fr>Galerie</span><span data-en hidden>Gallery</span></a></li>
+                <li><a href="#pricing"><span data-fr>Tarifs</span><span data-en hidden>Pricing</span></a></li>
+                <li><a href="#team"><span data-fr>Équipe</span><span data-en hidden>Team</span></a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" title="Switch language">
+                    <span class="lang-label lang-active">FR</span><span class="lang-sep">/</span><span class="lang-label lang-inactive">EN</span>
+                </button>
+                <a href="https://wa.me/33123456789" target="_blank" rel="noopener" class="nav-cta">
+                    <i class="fab fa-whatsapp"></i> <span data-fr>Réserver</span><span data-en hidden>Book</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-inner container">
+            <div class="hero-content">
+                <p class="hero-tagline">
+                    <span data-fr>Institut de Beauté & Bien-Être</span>
+                    <span data-en hidden>Beauty & Wellness Institute</span>
+                </p>
+                <h1>
+                    <span data-fr>L'Art du Soin<br>Naturel</span>
+                    <span data-en hidden>The Art of<br>Natural Care</span>
+                </h1>
+                <p class="hero-desc">
+                    <span data-fr>Madérothérapie, ventouses & soins du visage dans un cadre luxueux. Techniques ancestrales, résultats modernes.</span>
+                    <span data-en hidden>Maderotherapy, cupping & facial treatments in a luxurious setting. Ancient techniques, modern results.</span>
+                </p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/33123456789" target="_blank" rel="noopener" class="cta-button primary">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-fr>Réserver sur WhatsApp</span>
+                        <span data-en hidden>Book on WhatsApp</span>
+                    </a>
+                    <a href="tel:+33123456789" class="cta-button outline">
+                        <i class="fas fa-phone"></i>
+                        <span data-fr>Appeler</span>
+                        <span data-en hidden>Call Us</span>
+                    </a>
+                </div>
+                <div class="hero-urgency">
+                    <i class="fas fa-clock"></i>
+                    <span data-fr>Places limitées cette semaine</span>
+                    <span data-en hidden>Limited slots this week</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-frame">
+                    <div class="hero-image-placeholder">
+                        <i class="fas fa-spa"></i>
+                        <p data-fr>Votre photo ici</p>
+                        <p data-en hidden>Your photo here</p>
+                    </div>
+                </div>
+                <div class="hero-float-card">
+                    <div class="float-stars">★★★★★</div>
+                    <p><strong>500+</strong> <span data-fr>clients satisfaits</span><span data-en hidden>happy clients</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <i class="fas fa-award"></i>
+                    <span data-fr>Thérapeute Certifiée</span>
+                    <span data-en hidden>Certified Therapist</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-leaf"></i>
+                    <span data-fr>100% Produits Naturels</span>
+                    <span data-en hidden>100% Natural Products</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-halved"></i>
+                    <span data-fr>Hygiène Garantie</span>
+                    <span data-en hidden>Guaranteed Hygiene</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-heart"></i>
+                    <span data-fr>10+ Ans d'Expérience</span>
+                    <span data-en hidden>10+ Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label"><span data-fr>Nos Prestations</span><span data-en hidden>Our Treatments</span></p>
+                <h2><span data-fr>Des Soins d'Exception</span><span data-en hidden>Exceptional Treatments</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-hands"></i></div>
+                    <h3>Madérothérapie</h3>
+                    <p class="service-subtitle"><span data-fr>Visage & Corps</span><span data-en hidden>Face & Body</span></p>
+                    <p class="service-desc"><span data-fr>Techniques ancestrales avec outils en bois naturel pour stimuler la circulation, drainer et sculpter le corps.</span><span data-en hidden>Ancient techniques with natural wood tools to stimulate circulation, drain and sculpt the body.</span></p>
+                    <ul class="service-benefits">
+                        <li><span data-fr>Drainage lymphatique</span><span data-en hidden>Lymphatic drainage</span></li>
+                        <li><span data-fr>Lifting naturel</span><span data-en hidden>Natural lifting</span></li>
+                        <li><span data-fr>Amélioration de la texture</span><span data-en hidden>Improved skin texture</span></li>
+                        <li><span data-fr>Sculptage corporel</span><span data-en hidden>Body sculpting</span></li>
+                    </ul>
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20s%C3%A9ance%20de%20Mad%C3%A9roth%C3%A9rapie" target="_blank" rel="noopener" class="service-cta"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver ce soin</span><span data-en hidden>Book this treatment</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-circle-dot"></i></div>
+                    <h3>Ventouses</h3>
+                    <p class="service-subtitle">Cupping Therapy</p>
+                    <p class="service-desc"><span data-fr>Thérapie par ventouses pour relâcher les tensions profondes, détoxifier et favoriser une circulation optimale.</span><span data-en hidden>Cupping therapy to release deep tension, detoxify and promote optimal circulation.</span></p>
+                    <ul class="service-benefits">
+                        <li><span data-fr>Relâchement musculaire</span><span data-en hidden>Muscle release</span></li>
+                        <li><span data-fr>Détoxification profonde</span><span data-en hidden>Deep detoxification</span></li>
+                        <li><span data-fr>Bien-être durable</span><span data-en hidden>Lasting wellness</span></li>
+                        <li><span data-fr>Circulation améliorée</span><span data-en hidden>Improved circulation</span></li>
+                    </ul>
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20s%C3%A9ance%20de%20Ventouses" target="_blank" rel="noopener" class="service-cta"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver ce soin</span><span data-en hidden>Book this treatment</span></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Facial Esthetics</h3>
+                    <p class="service-subtitle"><span data-fr>Soins du Visage</span><span data-en hidden>Facial Treatments</span></p>
+                    <p class="service-desc"><span data-fr>Soins haute gamme avec produits naturels premium pour une peau radieuse, hydratée et éclatante.</span><span data-en hidden>High-end treatments with premium natural products for radiant, hydrated and glowing skin.</span></p>
+                    <ul class="service-benefits">
+                        <li><span data-fr>Hydratation intense</span><span data-en hidden>Deep hydration</span></li>
+                        <li><span data-fr>Éclat naturel</span><span data-en hidden>Natural glow</span></li>
+                        <li><span data-fr>Anti-âge avancé</span><span data-en hidden>Advanced anti-aging</span></li>
+                        <li><span data-fr>Rajeunissement visible</span><span data-en hidden>Visible rejuvenation</span></li>
+                    </ul>
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20soin%20Facial%20Esthetics" target="_blank" rel="noopener" class="service-cta"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver ce soin</span><span data-en hidden>Book this treatment</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label"><span data-fr>Nos Traitements en Images</span><span data-en hidden>Our Treatments in Pictures</span></p>
+                <h2><span data-fr>Galerie & Processus</span><span data-en hidden>Gallery & Process</span></h2>
+                <p class="section-subtitle"><span data-fr>Découvrez nos soins étape par étape et les résultats obtenus par nos clientes</span><span data-en hidden>Discover our treatments step by step and the results achieved by our clients</span></p>
+            </div>
+
+            <!-- Gallery Filter Tabs -->
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-filter="all"><span data-fr>Tous</span><span data-en hidden>All</span></button>
+                <button class="gallery-tab" data-filter="maderotherapie">Madérothérapie</button>
+                <button class="gallery-tab" data-filter="ventouses">Ventouses</button>
+                <button class="gallery-tab" data-filter="facial">Facial Esthetics</button>
+            </div>
+
+            <!-- Treatment Showcase 1: Madérothérapie -->
+            <div class="treatment-showcase" data-category="maderotherapie">
+                <div class="showcase-header">
+                    <div class="showcase-icon"><i class="fas fa-hands"></i></div>
+                    <div>
+                        <h3>Madérothérapie</h3>
+                        <p class="showcase-tagline"><span data-fr>Sculptage naturel avec outils en bois</span><span data-en hidden>Natural sculpting with wooden tools</span></p>
+                    </div>
+                </div>
+
+                <div class="showcase-content">
+                    <!-- Image Grid -->
+                    <div class="showcase-images">
+                        <div class="showcase-img main">
+                            <div class="img-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span data-fr>Photo du traitement</span><span data-en hidden>Treatment photo</span>
+                            </div>
+                            <div class="img-badge"><span data-fr>Traitement en cours</span><span data-en hidden>Treatment in progress</span></div>
+                        </div>
+                        <div class="showcase-img-grid">
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Outils en bois</span><span data-en hidden>Wood tools</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Application</span><span data-en hidden>Application</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Résultat</span><span data-en hidden>Result</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Avant / Après</span><span data-en hidden>Before / After</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Steps -->
+                    <div class="showcase-process">
+                        <h4><i class="fas fa-list-ol"></i> <span data-fr>Comment se déroule le soin ?</span><span data-en hidden>How does the treatment work?</span></h4>
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Consultation & Diagnostic</span><span data-en hidden>Consultation & Assessment</span></h5>
+                                    <p><span data-fr>Votre praticienne évalue votre peau, identifie les zones à traiter et définit un protocole personnalisé selon vos objectifs.</span><span data-en hidden>Your practitioner evaluates your skin, identifies areas to treat, and creates a personalized protocol based on your goals.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 10 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Préparation de la Peau</span><span data-en hidden>Skin Preparation</span></h5>
+                                    <p><span data-fr>Application d'une huile naturelle premium pour faciliter le glissement des outils et nourrir la peau en profondeur.</span><span data-en hidden>Application of a premium natural oil to facilitate tool gliding and deeply nourish the skin.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 5 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Modelage avec Outils en Bois</span><span data-en hidden>Sculpting with Wooden Tools</span></h5>
+                                    <p><span data-fr>Utilisation de différents outils en bois (rouleau, champignon, cube) pour masser, drainer et sculpter. Mouvements précis qui activent la circulation lymphatique et réduisent la cellulite.</span><span data-en hidden>Use of different wooden tools (roller, mushroom, cube) to massage, drain and sculpt. Precise movements that activate lymphatic circulation and reduce cellulite.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 35 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Finalisation & Conseils</span><span data-en hidden>Completion & Advice</span></h5>
+                                    <p><span data-fr>Application d'un sérum raffermissant. Votre praticienne vous donne des conseils personnalisés pour maximiser les résultats entre les séances.</span><span data-en hidden>Application of a firming serum. Your practitioner gives you personalized advice to maximize results between sessions.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 10 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-results">
+                            <h5><i class="fas fa-chart-line"></i> <span data-fr>Résultats attendus</span><span data-en hidden>Expected results</span></h5>
+                            <div class="results-grid">
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Réduction visible de la cellulite dès la 1ère séance</span><span data-en hidden>Visible cellulite reduction from 1st session</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Peau plus ferme et lissée après 3 séances</span><span data-en hidden>Firmer and smoother skin after 3 sessions</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Silhouette sculptée après 6 séances</span><span data-en hidden>Sculpted silhouette after 6 sessions</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Amélioration durable de la circulation</span><span data-en hidden>Lasting improvement in circulation</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-cta">
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20la%20Mad%C3%A9roth%C3%A9rapie" target="_blank" rel="noopener" class="cta-button primary"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver une Madérothérapie</span><span data-en hidden>Book a Maderotherapy</span></a>
+                </div>
+            </div>
+
+            <!-- Treatment Showcase 2: Ventouses -->
+            <div class="treatment-showcase" data-category="ventouses">
+                <div class="showcase-header">
+                    <div class="showcase-icon"><i class="fas fa-circle-dot"></i></div>
+                    <div>
+                        <h3>Ventouses — Cupping Therapy</h3>
+                        <p class="showcase-tagline"><span data-fr>Détoxification profonde et libération musculaire</span><span data-en hidden>Deep detoxification and muscle release</span></p>
+                    </div>
+                </div>
+
+                <div class="showcase-content">
+                    <div class="showcase-images">
+                        <div class="showcase-img main">
+                            <div class="img-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span data-fr>Photo du traitement</span><span data-en hidden>Treatment photo</span>
+                            </div>
+                            <div class="img-badge"><span data-fr>Séance en cours</span><span data-en hidden>Session in progress</span></div>
+                        </div>
+                        <div class="showcase-img-grid">
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Ventouses</span><span data-en hidden>Cups</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Pose</span><span data-en hidden>Placement</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Zones traitées</span><span data-en hidden>Treated areas</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Avant / Après</span><span data-en hidden>Before / After</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-process">
+                        <h4><i class="fas fa-list-ol"></i> <span data-fr>Comment se déroule le soin ?</span><span data-en hidden>How does the treatment work?</span></h4>
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Évaluation des Tensions</span><span data-en hidden>Tension Assessment</span></h5>
+                                    <p><span data-fr>Identification des zones de tension, douleur ou blocage énergétique. Discussion de vos symptômes et de vos objectifs thérapeutiques.</span><span data-en hidden>Identification of tension, pain or energy blockage zones. Discussion of your symptoms and therapeutic goals.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 10 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Application des Huiles</span><span data-en hidden>Oil Application</span></h5>
+                                    <p><span data-fr>Massage préparatoire avec des huiles essentielles chaudes pour stimuler la circulation et préparer la peau au cupping.</span><span data-en hidden>Preparatory massage with warm essential oils to stimulate circulation and prepare the skin for cupping.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 5 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Pose des Ventouses</span><span data-en hidden>Cup Placement</span></h5>
+                                    <p><span data-fr>Placement stratégique des ventouses en silicone sur les points d'acupuncture et zones ciblées. La succion créée stimule le flux sanguin, décolle les adhérences et libère les toxines piégées dans les tissus.</span><span data-en hidden>Strategic placement of silicone cups on acupuncture points and targeted zones. The suction created stimulates blood flow, releases adhesions and frees toxins trapped in tissues.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 25 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Retrait & Récupération</span><span data-en hidden>Removal & Recovery</span></h5>
+                                    <p><span data-fr>Retrait doux des ventouses, suivi d'un massage apaisant. Conseils d'hydratation et de récupération pour les 48h suivantes.</span><span data-en hidden>Gentle cup removal, followed by a soothing massage. Hydration and recovery advice for the following 48 hours.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 10 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-results">
+                            <h5><i class="fas fa-chart-line"></i> <span data-fr>Résultats attendus</span><span data-en hidden>Expected results</span></h5>
+                            <div class="results-grid">
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Soulagement immédiat des tensions musculaires</span><span data-en hidden>Immediate muscle tension relief</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Détoxification profonde du corps</span><span data-en hidden>Deep body detoxification</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Meilleure mobilité articulaire après 2 séances</span><span data-en hidden>Better joint mobility after 2 sessions</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Réduction du stress et meilleur sommeil</span><span data-en hidden>Reduced stress and better sleep</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-cta">
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20les%20Ventouses" target="_blank" rel="noopener" class="cta-button primary"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver une séance Ventouses</span><span data-en hidden>Book a Cupping Session</span></a>
+                </div>
+            </div>
+
+            <!-- Treatment Showcase 3: Facial Esthetics -->
+            <div class="treatment-showcase" data-category="facial">
+                <div class="showcase-header">
+                    <div class="showcase-icon"><i class="fas fa-gem"></i></div>
+                    <div>
+                        <h3>Facial Esthetics</h3>
+                        <p class="showcase-tagline"><span data-fr>Éclat et rajeunissement du visage</span><span data-en hidden>Facial radiance and rejuvenation</span></p>
+                    </div>
+                </div>
+
+                <div class="showcase-content">
+                    <div class="showcase-images">
+                        <div class="showcase-img main">
+                            <div class="img-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span data-fr>Photo du traitement</span><span data-en hidden>Treatment photo</span>
+                            </div>
+                            <div class="img-badge"><span data-fr>Soin visage</span><span data-en hidden>Facial care</span></div>
+                        </div>
+                        <div class="showcase-img-grid">
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Produits naturels</span><span data-en hidden>Natural products</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Application masque</span><span data-en hidden>Mask application</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Massage visage</span><span data-en hidden>Face massage</span></div>
+                            </div>
+                            <div class="showcase-img small">
+                                <div class="img-placeholder"><i class="fas fa-image"></i><span data-fr>Avant / Après</span><span data-en hidden>Before / After</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-process">
+                        <h4><i class="fas fa-list-ol"></i> <span data-fr>Comment se déroule le soin ?</span><span data-en hidden>How does the treatment work?</span></h4>
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Analyse de Peau</span><span data-en hidden>Skin Analysis</span></h5>
+                                    <p><span data-fr>Examen détaillé de votre type de peau, hydratation, texture et préoccupations spécifiques (rides, taches, acné). Sélection du protocole adapté.</span><span data-en hidden>Detailed examination of your skin type, hydration, texture and specific concerns (wrinkles, spots, acne). Selection of the adapted protocol.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 5 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Double Nettoyage & Exfoliation</span><span data-en hidden>Double Cleanse & Exfoliation</span></h5>
+                                    <p><span data-fr>Nettoyage en profondeur avec un lait démaquillant naturel suivi d'une exfoliation enzymatique douce qui élimine les cellules mortes sans agresser la peau.</span><span data-en hidden>Deep cleansing with a natural cleansing milk followed by a gentle enzymatic exfoliation that removes dead cells without damaging the skin.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 10 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Sérum & Masque Haute Performance</span><span data-en hidden>High Performance Serum & Mask</span></h5>
+                                    <p><span data-fr>Application d'un cocktail de sérums actifs (acide hyaluronique, vitamine C, peptides) suivi d'un masque sur mesure pendant un massage facial sculptant et rajeunissant.</span><span data-en hidden>Application of an active serum cocktail (hyaluronic acid, vitamin C, peptides) followed by a tailored mask during a sculpting and rejuvenating facial massage.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 25 min</span>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5><span data-fr>Protection & Éclat Final</span><span data-en hidden>Protection & Final Glow</span></h5>
+                                    <p><span data-fr>Application d'une crème hydratante riche et d'une protection solaire. Votre peau est immédiatement plus lumineuse, hydratée et repulpée.</span><span data-en hidden>Application of a rich moisturizer and sun protection. Your skin is immediately brighter, hydrated and plumped.</span></p>
+                                    <span class="step-duration"><i class="fas fa-clock"></i> 10 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-results">
+                            <h5><i class="fas fa-chart-line"></i> <span data-fr>Résultats attendus</span><span data-en hidden>Expected results</span></h5>
+                            <div class="results-grid">
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Éclat immédiat visible dès la 1ère séance</span><span data-en hidden>Immediate glow visible from 1st session</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Réduction des rides fines après 3 séances</span><span data-en hidden>Fine line reduction after 3 sessions</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Peau plus ferme et élastique après 5 séances</span><span data-en hidden>Firmer and more elastic skin after 5 sessions</span></div>
+                                <div class="result-item"><i class="fas fa-check-circle"></i> <span data-fr>Teint unifié et hydratation longue durée</span><span data-en hidden>Even complexion and long-lasting hydration</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-cta">
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20le%20Facial%20Esthetics" target="_blank" rel="noopener" class="cta-button primary"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver un Facial Esthetics</span><span data-en hidden>Book a Facial Esthetics</span></a>
+                </div>
+            </div>
+
+            <p class="gallery-note"><span data-fr>* Les photos seront ajoutées prochainement. Résultats variables selon les individus. Photos avec consentement de nos clientes.</span><span data-en hidden>* Photos coming soon. Results may vary between individuals. Photos with client consent.</span></p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label"><span data-fr>Nos Tarifs</span><span data-en hidden>Our Pricing</span></p>
+                <h2><span data-fr>Investissez en Vous</span><span data-en hidden>Invest in Yourself</span></h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Madérothérapie</h3>
+                    <div class="price">180 <span>CHF</span></div>
+                    <p class="duration">60 min</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> <span data-fr>Diagnostic personnalisé</span><span data-en hidden>Personalized assessment</span></li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Outils en bois premium</span><span data-en hidden>Premium wood tools</span></li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Produits 100% naturels</span><span data-en hidden>100% natural products</span></li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Conseil post-soin</span><span data-en hidden>Post-treatment advice</span></li>
+                    </ul>
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20Mad%C3%A9roth%C3%A9rapie%20(180%20CHF)" target="_blank" rel="noopener" class="cta-button outline full"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver</span><span data-en hidden>Book Now</span></a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge"><span data-fr>Meilleure Offre</span><span data-en hidden>Best Value</span></div>
+                    <h3>Package Complet</h3>
+                    <div class="price">380 <span>CHF</span></div>
+                    <p class="duration">120 min</p>
+                    <p class="savings"><span data-fr>Économisez 100 CHF</span><span data-en hidden>Save 100 CHF</span></p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> <span data-fr>Madérothérapie complète</span><span data-en hidden>Full maderotherapy</span></li>
+                        <li><i class="fas fa-check"></i> Cupping therapy</li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Facial rituel luxe</span><span data-en hidden>Luxury facial ritual</span></li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Ambiance détente</span><span data-en hidden>Relaxing atmosphere</span></li>
+                    </ul>
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20le%20Package%20Complet%20(380%20CHF)" target="_blank" rel="noopener" class="cta-button primary full"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver Maintenant</span><span data-en hidden>Book Now</span></a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Facial Esthetics</h3>
+                    <div class="price">150 <span>CHF</span></div>
+                    <p class="duration">50 min</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> <span data-fr>Analyse de peau</span><span data-en hidden>Skin analysis</span></li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Sérums haute gamme</span><span data-en hidden>Premium serums</span></li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Massage rajeunissant</span><span data-en hidden>Rejuvenating massage</span></li>
+                        <li><i class="fas fa-check"></i> <span data-fr>Protocole sur mesure</span><span data-en hidden>Tailored protocol</span></li>
+                    </ul>
+                    <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20Facial%20Esthetics%20(150%20CHF)" target="_blank" rel="noopener" class="cta-button outline full"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver</span><span data-en hidden>Book Now</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label"><span data-fr>Avis Clients</span><span data-en hidden>Client Reviews</span></p>
+                <h2><span data-fr>Ce Qu'ils Disent</span><span data-en hidden>What They Say</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SM</div>
+                        <div>
+                            <p class="testimonial-name">Sophie M.</p>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="quote"><span data-fr>"Une expérience transformatrice. L'atmosphère est d'une sérénité absolue. Je reviens chaque mois!"</span><span data-en hidden>"A transformative experience. The atmosphere is absolutely serene. I come back every month!"</span></p>
+                    <p class="testimonial-service">Madérothérapie</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MD</div>
+                        <div>
+                            <p class="testimonial-name">Marc D.</p>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="quote"><span data-fr>"Résultats remarquables après 3 séances de ventouses. Mon dos n'a jamais été aussi souple!"</span><span data-en hidden>"Remarkable results after 3 cupping sessions. My back has never been so flexible!"</span></p>
+                    <p class="testimonial-service">Ventouses</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">IL</div>
+                        <div>
+                            <p class="testimonial-name">Isabelle L.</p>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="quote"><span data-fr>"Un véritable sanctuaire. Ma peau n'a jamais été aussi éclatante. Merci Beauty Perfect!"</span><span data-en hidden>"A true sanctuary. My skin has never been so radiant. Thank you Beauty Perfect!"</span></p>
+                    <p class="testimonial-service">Facial Esthetics</p>
+                </div>
+            </div>
+            <div class="testimonial-cta">
+                <a href="https://wa.me/33123456789?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous" target="_blank" rel="noopener" class="cta-button primary"><i class="fab fa-whatsapp"></i> <span data-fr>Rejoignez nos clients satisfaits</span><span data-en hidden>Join our happy clients</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label"><span data-fr>Notre Équipe</span><span data-en hidden>Our Team</span></p>
+                <h2><span data-fr>Des Mains Expertes</span><span data-en hidden>Expert Hands</span></h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo"><div class="team-photo-placeholder"><i class="fas fa-user"></i></div></div>
+                    <h3>Sarah Laurent</h3>
+                    <p class="team-role"><span data-fr>Fondatrice & Praticienne Senior</span><span data-en hidden>Founder & Senior Practitioner</span></p>
+                    <p class="team-exp"><span data-fr>12 ans d'expérience</span><span data-en hidden>12 years experience</span></p>
+                    <div class="team-specialties"><span>Madérothérapie</span><span>Ventouses</span></div>
+                    <div class="team-certs"><i class="fas fa-award"></i> <span data-fr>Certifiée CIDESCO</span><span data-en hidden>CIDESCO Certified</span></div>
+                    <a href="https://wa.me/33123456789?text=Bonjour%20Sarah%2C%20je%20souhaite%20prendre%20rendez-vous" target="_blank" rel="noopener" class="team-cta"><i class="fab fa-whatsapp"></i> <span data-fr>Contacter Sarah</span><span data-en hidden>Contact Sarah</span></a>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"><div class="team-photo-placeholder"><i class="fas fa-user"></i></div></div>
+                    <h3>Amira Benali</h3>
+                    <p class="team-role"><span data-fr>Esthéticienne Spécialisée</span><span data-en hidden>Specialized Aesthetician</span></p>
+                    <p class="team-exp"><span data-fr>8 ans d'expérience</span><span data-en hidden>8 years experience</span></p>
+                    <div class="team-specialties"><span>Facial Esthetics</span><span>Anti-âge</span></div>
+                    <div class="team-certs"><i class="fas fa-award"></i> <span data-fr>Diplômée CFC Esthétique</span><span data-en hidden>CFC Beauty Diploma</span></div>
+                    <a href="https://wa.me/33123456789?text=Bonjour%20Amira%2C%20je%20souhaite%20prendre%20rendez-vous" target="_blank" rel="noopener" class="team-cta"><i class="fab fa-whatsapp"></i> <span data-fr>Contacter Amira</span><span data-en hidden>Contact Amira</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-text">
+                    <p class="section-label"><span data-fr>Notre Histoire</span><span data-en hidden>Our Story</span></p>
+                    <h2>Beauty Perfect</h2>
+                    <p><span data-fr>Un sanctuaire urbain dédié au bien-être holistique. Nous célébrons la fusion entre les techniques ancestrales éprouvées et l'innovation moderne pour des résultats exceptionnels.</span><span data-en hidden>An urban sanctuary dedicated to holistic wellness. We celebrate the fusion of proven ancestral techniques with modern innovation for exceptional results.</span></p>
+                    <p class="about-philosophy"><span data-fr>Notre philosophie : <strong>Luxe, Authenticité, Transformation</strong></span><span data-en hidden>Our philosophy: <strong>Luxury, Authenticity, Transformation</strong></span></p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat"><h3 class="counter" data-target="500">0</h3><span>+</span><p><span data-fr>Clients satisfaits</span><span data-en hidden>Happy clients</span></p></div>
+                    <div class="stat"><h3 class="counter" data-target="10">0</h3><span>+</span><p><span data-fr>Années d'expertise</span><span data-en hidden>Years of expertise</span></p></div>
+                    <div class="stat"><h3>100%</h3><span></span><p><span data-fr>Produits naturels</span><span data-en hidden>Natural products</span></p></div>
+                    <div class="stat"><h3>5.0</h3><span>★</span><p><span data-fr>Note Google</span><span data-en hidden>Google Rating</span></p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label"><span data-fr>Questions Fréquentes</span><span data-en hidden>Frequently Asked Questions</span></p>
+                <h2>FAQ</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question"><span data-fr>Comment se déroule un premier rendez-vous ?</span><span data-en hidden>What happens during a first appointment?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p><span data-fr>Votre première visite commence par une consultation personnalisée de 15 minutes pour comprendre vos besoins. Ensuite, votre praticienne adapte le soin à votre profil. Vous repartez avec des conseils sur mesure pour prolonger les bienfaits.</span><span data-en hidden>Your first visit begins with a 15-minute personalized consultation to understand your needs. Then, your practitioner adapts the treatment to your profile. You leave with tailored advice to extend the benefits.</span></p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span data-fr>Combien de temps durent les résultats ?</span><span data-en hidden>How long do results last?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p><span data-fr>La madérothérapie offre des effets visibles dès la première séance, avec des résultats optimaux après 3 à 6 séances. Les soins du visage montrent un éclat immédiat qui dure 1 à 2 semaines.</span><span data-en hidden>Maderotherapy shows visible effects from the first session, with optimal results after 3 to 6 sessions. Facial treatments show an immediate glow lasting 1 to 2 weeks.</span></p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span data-fr>Est-ce adapté aux peaux sensibles ?</span><span data-en hidden>Is it suitable for sensitive skin?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p><span data-fr>Absolument. Nous utilisons exclusivement des produits naturels hypoallergéniques. Lors de la consultation, nous évaluons votre type de peau et adaptons le protocole en conséquence.</span><span data-en hidden>Absolutely. We exclusively use hypoallergenic natural products. During the consultation, we evaluate your skin type and adapt the protocol accordingly.</span></p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span data-fr>Puis-je réserver le jour même ?</span><span data-en hidden>Can I book a same-day appointment?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p><span data-fr>Oui, sous réserve de disponibilité. Envoyez-nous un message WhatsApp et nous vous confirmerons dans les 30 minutes.</span><span data-en hidden>Yes, subject to availability. Send us a WhatsApp message and we'll confirm within 30 minutes.</span></p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span data-fr>Quelle est votre politique d'annulation ?</span><span data-en hidden>What is your cancellation policy?</span><i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p><span data-fr>Nous demandons un préavis de 24 heures. Les annulations tardives peuvent être facturées à 50%. Contactez-nous sur WhatsApp pour reprogrammer.</span><span data-en hidden>We require 24-hour notice. Late cancellations may incur a 50% charge. Contact us on WhatsApp to reschedule.</span></p></div>
+                </div>
+            </div>
+            <div class="faq-cta">
+                <p><span data-fr>Vous avez d'autres questions ?</span><span data-en hidden>Have more questions?</span></p>
+                <a href="https://wa.me/33123456789?text=Bonjour%2C%20j'ai%20une%20question" target="_blank" rel="noopener" class="cta-button primary"><i class="fab fa-whatsapp"></i> <span data-fr>Posez votre question</span><span data-en hidden>Ask your question</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label"><span data-fr>Nous Trouver</span><span data-en hidden>Find Us</span></p>
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="contact-card whatsapp-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div><h4>WhatsApp</h4><p><span data-fr>Réponse rapide</span><span data-en hidden>Quick response</span></p></div>
+                        <a href="https://wa.me/33123456789" target="_blank" rel="noopener" class="contact-action"><span data-fr>Envoyer</span><span data-en hidden>Send</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div><h4><span data-fr>Téléphone</span><span data-en hidden>Phone</span></h4><p>+33 (0)1 23 45 67 89</p></div>
+                        <a href="tel:+33123456789" class="contact-action"><span data-fr>Appeler</span><span data-en hidden>Call</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><h4><span data-fr>Adresse</span><span data-en hidden>Address</span></h4><p>123 Rue de l'Élégance<br>75008 Paris, France</p></div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <div><h4><span data-fr>Horaires</span><span data-en hidden>Hours</span></h4><p><span data-fr>Lun–Sam : 10h–19h<br>Dim : Sur rendez-vous</span><span data-en hidden>Mon–Sat: 10am–7pm<br>Sun: By appointment</span></p></div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6934820854396!2d2.2945268!3d48.865381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fb424acbbbb%3A0x3c4d00b87f8ff9df!2s123%20Rue%20de%20l'%C3%89l%C3%A9gance%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo"><div class="logo-mark">B<span>P</span></div><div class="logo-text">Beauty Perfect</div></div>
+                    <p><span data-fr>L'art du soin naturel et du bien-être holistique.</span><span data-en hidden>The art of natural care and holistic wellness.</span></p>
+                </div>
+                <div class="footer-links">
+                    <h4><span data-fr>Navigation</span><span data-en hidden>Navigation</span></h4>
+                    <a href="#services"><span data-fr>Soins</span><span data-en hidden>Services</span></a>
+                    <a href="#pricing"><span data-fr>Tarifs</span><span data-en hidden>Pricing</span></a>
+                    <a href="#team"><span data-fr>Équipe</span><span data-en hidden>Team</span></a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4><span data-fr>Contactez-Nous</span><span data-en hidden>Contact Us</span></h4>
+                    <a href="https://wa.me/33123456789" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="tel:+33123456789"><i class="fas fa-phone"></i> +33 (0)1 23 45 67 89</a>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty Perfect. <span data-fr>Tous droits réservés.</span><span data-en hidden>All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <a href="https://wa.me/33123456789" target="_blank" rel="noopener" class="cta-button primary full"><i class="fab fa-whatsapp"></i> <span data-fr>Réserver sur WhatsApp</span><span data-en hidden>Book on WhatsApp</span></a>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/33123456789" target="_blank" rel="noopener" class="whatsapp-float" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip"><span data-fr>Besoin d'aide ?</span><span data-en hidden>Need help?</span></span>
+    </a>
+
+    <!-- Timed Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-modal">
+            <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
+            <div class="popup-visual">
+                <div class="popup-icon-wrap">
+                    <i class="fas fa-gift"></i>
+                </div>
+            </div>
+            <div class="popup-body">
+                <p class="popup-label"><span data-fr>Offre Exclusive</span><span data-en hidden>Exclusive Offer</span></p>
+                <h3><span data-fr>Votre Moment Bien-Être<br>Vous Attend</span><span data-en hidden>Your Wellness Moment<br>Awaits You</span></h3>
+                <p class="popup-text"><span data-fr>Réservez votre premier soin aujourd'hui et bénéficiez de <strong>-20% de réduction</strong> + une consultation personnalisée offerte. Places limitées !</span><span data-en hidden>Book your first treatment today and enjoy <strong>20% OFF</strong> + a free personalized consultation. Limited spots!</span></p>
+                <div class="popup-perks">
+                    <div class="popup-perk"><i class="fas fa-check-circle"></i> <span data-fr>-20% sur le 1er soin</span><span data-en hidden>20% off 1st treatment</span></div>
+                    <div class="popup-perk"><i class="fas fa-check-circle"></i> <span data-fr>Consultation gratuite</span><span data-en hidden>Free consultation</span></div>
+                    <div class="popup-perk"><i class="fas fa-check-circle"></i> <span data-fr>Sans engagement</span><span data-en hidden>No commitment</span></div>
+                </div>
+                <a href="https://wa.me/33123456789?text=Bonjour%2C%20j'ai%20vu%20l'offre%20exclusive%20sur%20votre%20site%20!" target="_blank" rel="noopener" class="cta-button primary full popup-cta"><i class="fab fa-whatsapp"></i> <span data-fr>Profiter de l'Offre</span><span data-en hidden>Claim the Offer</span></a>
+                <p class="popup-skip" id="popupSkip"><span data-fr>Non merci, peut-être plus tard</span><span data-en hidden>No thanks, maybe later</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+            <i class="fas fa-music" id="musicIcon"></i>
+            <span class="music-label"><span data-fr>Ambiance</span><span data-en hidden>Mood</span></span>
+        </button>
+        <div class="music-panel" id="musicPanel">
+            <div class="music-info">
+                <div class="music-eq" id="musicEq">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <div>
+                    <p class="music-title">Lofi Chill</p>
+                    <p class="music-subtitle"><span data-fr>Ambiance relaxante</span><span data-en hidden>Relaxing ambiance</span></p>
+                </div>
+            </div>
+            <div class="music-controls">
+                <button class="music-play" id="musicPlay" aria-label="Play/Pause">
+                    <i class="fas fa-play" id="musicPlayIcon"></i>
+                </button>
+                <input type="range" class="music-volume" id="musicVolume" min="0" max="100" value="30" aria-label="Volume">
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Audio (lofi stream) -->
+    <audio id="bgMusic" loop preload="none">
+        <source src="https://cdn.pixabay.com/audio/2024/11/01/audio_929388bfcf.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
