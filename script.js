@@ -137,9 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
             galleryTabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            // Filter showcases
+            // Filter showcases — show only selected
             showcases.forEach(showcase => {
-                if (filter === 'all' || showcase.getAttribute('data-category') === filter) {
+                if (showcase.getAttribute('data-category') === filter) {
                     showcase.classList.remove('hidden');
                 } else {
                     showcase.classList.add('hidden');
