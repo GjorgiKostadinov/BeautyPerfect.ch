@@ -2911,6 +2911,21 @@ ul {
     margin-bottom: 12px;
 }
 
+.popup-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.popup-instagram:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
 .popup-skip {
     font-size: 0.8rem;
     color: var(--text-light);
