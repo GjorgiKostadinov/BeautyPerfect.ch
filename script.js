@@ -125,6 +125,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Detail Section Tabs ---
+    const detailTabs = document.querySelectorAll('.detail-tab');
+    const detailPanels = document.querySelectorAll('.detail-panel');
+
+    function switchDetailTab(target) {
+        detailTabs.forEach(t => t.classList.remove('active'));
+        detailPanels.forEach(panel => {
+            if (panel.getAttribute('data-panel') === target) {
+                panel.classList.remove('hidden');
+            } else {
+                panel.classList.add('hidden');
+            }
+        });
+        const activeTab = document.querySelector(`.detail-tab[data-detail="${target}"]`);
+        if (activeTab) activeTab.classList.add('active');
+    }
+
+    detailTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            switchDetailTab(tab.getAttribute('data-detail'));
+        });
+    });
+
+    // "En savoir plus" links activate the correct detail tab
+    document.querySelectorAll('.service-learn-more').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const hash = link.getAttribute('href');
+            if (hash && hash.startsWith('#detail-')) {
+                const target = hash.replace('#detail-', '');
+                switchDetailTab(target);
+            }
+        });
+    });
+
     // --- Gallery Filter Tabs ---
     const galleryTabs = document.querySelectorAll('.gallery-tab');
     const showcases = document.querySelectorAll('.treatment-showcase');
