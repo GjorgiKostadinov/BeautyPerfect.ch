@@ -159,29 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Gallery Filter Tabs ---
-    const galleryTabs = document.querySelectorAll('.gallery-tab');
-    const showcases = document.querySelectorAll('.treatment-showcase');
-
-    galleryTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const filter = tab.getAttribute('data-filter');
-
-            // Update active tab
-            galleryTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-
-            // Filter showcases — show only selected
-            showcases.forEach(showcase => {
-                if (showcase.getAttribute('data-category') === filter) {
-                    showcase.classList.remove('hidden');
-                } else {
-                    showcase.classList.add('hidden');
-                }
-            });
-        });
-    });
-
     // --- Counter Animation ---
     const counters = document.querySelectorAll('.counter');
     let countersAnimated = false;
