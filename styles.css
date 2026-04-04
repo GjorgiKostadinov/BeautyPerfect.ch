@@ -524,6 +524,26 @@ ul {
     animation: pulse-icon 2s infinite;
 }
 
+.hero-review-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--gold);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    color: var(--gold);
+    font-weight: 500;
+    margin-top: 10px;
+    transition: var(--transition);
+}
+
+.hero-review-link:hover {
+    background: var(--gold);
+    color: var(--white);
+}
+
 @keyframes pulse-icon {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.4; }
@@ -1717,6 +1737,25 @@ ul {
 
 .testimonial-cta {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.google-review-btn {
+    border-color: var(--gold) !important;
+    color: var(--gold) !important;
+}
+
+.google-review-btn:hover {
+    background: var(--gold) !important;
+    color: var(--white) !important;
+}
+
+.google-review-btn i {
+    font-size: 1.1em;
 }
 
 /* --- Team --- */
