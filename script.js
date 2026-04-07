@@ -312,67 +312,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Music Player ---
+    // --- Background Music (autoplay, quiet, no controls) ---
     const bgMusic = document.getElementById('bgMusic');
-    const musicToggle = document.getElementById('musicToggle');
-    const musicPanel = document.getElementById('musicPanel');
-    const musicPlay = document.getElementById('musicPlay');
-    const musicPlayIcon = document.getElementById('musicPlayIcon');
-    const musicVolume = document.getElementById('musicVolume');
-    const musicEq = document.getElementById('musicEq');
+    let bgMusicStarted = false;
 
-    let isMusicPlaying = false;
-    let isPanelOpen = false;
-
-    if (musicToggle) {
-        musicToggle.addEventListener('click', () => {
-            isPanelOpen = !isPanelOpen;
-            musicPanel.classList.toggle('active', isPanelOpen);
+    function startBgMusic() {
+        if (bgMusicStarted || !bgMusic) return;
+        bgMusic.volume = 0.15; // quiet background level
+        bgMusic.play().then(() => {
+            bgMusicStarted = true;
+        }).catch(() => {
+            // Autoplay blocked — will retry on next interaction
         });
     }
 
-    // Close panel when clicking outside
-    document.addEventListener('click', (e) => {
-        if (isPanelOpen && musicToggle && musicPanel &&
-            !musicToggle.contains(e.target) && !musicPanel.contains(e.target)) {
-            isPanelOpen = false;
-            musicPanel.classList.remove('active');
-        }
+    // Try to start immediately
+    startBgMusic();
+
+    // Browsers block autoplay until user interacts — start on first interaction
+    ['click', 'touchstart', 'scroll', 'keydown'].forEach(evt => {
+        document.addEventListener(evt, function startOnInteraction() {
+            startBgMusic();
+            if (bgMusicStarted) {
+                document.removeEventListener(evt, startOnInteraction);
+            }
+        }, { once: false, passive: true });
     });
-
-    function toggleMusic() {
-        if (!bgMusic) return;
-
-        if (isMusicPlaying) {
-            bgMusic.pause();
-            isMusicPlaying = false;
-            musicPlayIcon.classList.remove('fa-pause');
-            musicPlayIcon.classList.add('fa-play');
-            musicToggle.classList.remove('playing');
-            musicEq.classList.remove('playing');
-        } else {
-            bgMusic.volume = (musicVolume ? musicVolume.value : 30) / 100;
-            bgMusic.play().then(() => {
-                isMusicPlaying = true;
-                musicPlayIcon.classList.remove('fa-play');
-                musicPlayIcon.classList.add('fa-pause');
-                musicToggle.classList.add('playing');
-                musicEq.classList.add('playing');
-            }).catch(() => {
-                // Browser blocked autoplay — user needs to interact first (this is normal)
-            });
-        }
-    }
-
-    if (musicPlay) {
-        musicPlay.addEventListener('click', toggleMusic);
-    }
-
-    if (musicVolume && bgMusic) {
-        musicVolume.addEventListener('input', () => {
-            bgMusic.volume = musicVolume.value / 100;
-        });
-    }
 
 });
 
