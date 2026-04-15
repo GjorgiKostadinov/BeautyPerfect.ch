@@ -312,32 +312,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Background Music (autoplay, quiet, no controls) ---
-    const bgMusic = document.getElementById('bgMusic');
-    let bgMusicStarted = false;
-
-    function startBgMusic() {
-        if (bgMusicStarted || !bgMusic) return;
-        bgMusic.volume = 0.15; // quiet background level
-        bgMusic.play().then(() => {
-            bgMusicStarted = true;
-        }).catch(() => {
-            // Autoplay blocked — will retry on next interaction
-        });
-    }
-
-    // Try to start immediately
-    startBgMusic();
-
-    // Browsers block autoplay until user interacts — start on first interaction
-    ['click', 'touchstart', 'scroll', 'keydown'].forEach(evt => {
-        document.addEventListener(evt, function startOnInteraction() {
-            startBgMusic();
-            if (bgMusicStarted) {
-                document.removeEventListener(evt, startOnInteraction);
-            }
-        }, { once: false, passive: true });
-    });
-
 });
 
